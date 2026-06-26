@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>地図と説明</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .map {
+      width: 20%;
+      padding: 20px;
+      box-sizing: border-box;
+      border-right: 1px solid #ccc;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+
+    .content {
+      width: 80%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="map">
+      <h2>マップ</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.542034160875!2d139.65226329999996!3d35.73748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ed099a03e8bf%3A0xa29c91b3a3da398!2z5r-D6I-c6bq6IOS6leOBruW6hA!5e0!3m2!1sja!2sjp!4v1782449692421!5m2!1sja!2sjp"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+
+    <div class="content">
+      <h2>ランキング</h2>
+      <p>1 なつみ　<a href="#">リンク</a></p>
+      <p>2 なしん　<a href="#">リンク</a></p>
+    </div>
+  </div>
+</body>
+</html>
